@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.col {
+  width: 100%;
+  flex: 1;
+}
+
+.desktop {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/*======================== header ======================*/
+
+header {
+  background-image: url("/images/bg-hero-mobile.svg");
+  background-color: hsl(193, 100%, 96%);
+  background-position: center;
+  background-size: cover;
+}
+
+.logo__btn__div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  margin: 5% 0 0 3.5%;
+}
+
+.small__btn,
+.big__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.small__btn {
+  margin: 5% 3.5% 0 0;
+  background-color: #fff;
+  font-size: 80%;
+  width: 100px;
+  height: 25px;
+  box-shadow: 0 2px 5px -2px #999;
+}
+
+.small__btn:hover {
+  background-color: hsl(193, 100%, 99%);
+}
+
+.big__btn {
+  background-color: hsl(322, 100%, 66%);
+  height: 35px;
+  width: 60%;
+  color: #fff;
+  margin: 0 auto 50px auto;
+  font-size: 90%;
+}
+
+.big__btn:hover {
+  background-color: hsl(322, 100%, 75%);
+  box-shadow: 0 2px 5px -2px #999;
+}
+
+header h1,
+header p {
+  margin: 0 3.5%;
+}
+
+header h1 {
+  font-size: 150%;
+  padding: 100px 20px 0 20px;
+}
+
+header p {
+  font-size: 100%;
+  padding: 30px 20px;
+}
+
+header .col img {
+  margin: 0 7% 7% 7%;
+  width: 86%;
+}
+
+/*======================== section ======================*/
+
+section {
+  margin: 50px 0 150px 0;
+}
+
+section .row {
+  margin: 0 3.5% 15px 3.5%;
+  box-shadow: 0 1px 5px -0px #999;
+  border-radius: 24px;
+}
+
+section img {
+  padding: 50px;
+}
+
+section p {
+  padding: 15px 30px 50px 30px;
+  color: hsl(208, 11%, 55%);
+}
+
+/*======================== build community ======================*/
+
+.build-community {
+  position: absolute;
+  margin: -50px 3.5% 0 3.5%;
+  left: 0;
+  right: 0;
+  box-shadow: 0 1px 5px -0px #999;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.build-community h1 {
+  font-size: 100%;
+  padding: 50px 20px 20px 20px;
+}
+
+/*======================== Footer ======================*/
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  padding-top: 150px;
+}
+
+footer .row {
+  text-align: left;
+  margin-left: 3.5%;
+}
+
+footer .col {
+  padding: 30px 0;
+}
+
+footer h1,
+footer p,
+footer a {
+  color: #fff;
+}
+
+.address-link li,
+footer p {
+  padding-top: 10px;
+}
+
+.address-link a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.copy-socail-link {
+  text-align: center;
+}
+
+.social-link li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-link li a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-link a:hover {
+  color: hsl(322, 100%, 66%);
+}
+
+.copy-right {
+  font-size: 80%;
+}
+
+#svg {
+  fill: #fff;
+}
+
+
+
+/*======================== medai query ======================*/
+
+@media only screen and (max-width: 1700px) and (min-width: 481px){
+
+  section .row {
+    margin: 0 3.5% 30px 3.5%;
+    
+  }
+  
+    .row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+   
+    header .col img {
+      padding-top: 50px;
+    }
+
+    header .big__btn,
+    header p,
+    header h1,
+    section h2,
+    section p,
+    section img {
+        text-align: left;
+        margin-left: 7%;
+        margin-right: 7%;
+        padding-left: 0;
+        
+    }
+
+    section img {
+      width: 86%;
+    }
+
+    .build-community {
+     
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+     
+    } 
+
+
+    footer .col {
+      margin-right: 5%;
+    }
+
+    .copy-socail-link {
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    .address-link-div {
+      justify-content: space-between;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 500px){
+  footer a,
+  footer p,
+  section p,
+  header p {
+    font-size: 80%;
+  }
+
+  header h1,
+  section h2 {
+    font-size: 90%;
+  }
+
+  .social-link li a  {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 500px){
+ 
+  footer a,
+  footer p,
+  section p,
+  header p {
+    font-size: 70%;
+  }
+
+  header h1,
+  section h2 {
+    font-size: 70%;
+  }
+
+  .social-link li a  {
+    width: 20px;
+    height: 20px;
+  }
+}
+
